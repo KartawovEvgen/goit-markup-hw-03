@@ -11,7 +11,9 @@
   --primary-white-color: #ffffff;
 }
 
+
 body {
+  
   color: var(--primary-text-color)
   background-color: #ffffff;
   
@@ -25,6 +27,31 @@ body {
   
 }
 
+
+
+.page-header {
+  /* background-color: tomato; */
+}
+
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  
+
+  outline: 2px solid turquoise;
+}
+
+
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -35,6 +62,8 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Site nav */
@@ -48,6 +77,7 @@ body {
   color: var(--accent-color);
 }
 .auth-nav .link {
+  
   color: var(--text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -57,12 +87,25 @@ body {
   color: var(--accent-color);
 }
 /* Hero */
+
+.hero {
+  text-align: center;
+}
+
 .hero-title{
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+
   color: var(--primary-white-color);
   background-color: var(--text-color);
+
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+
+
   text-align: center;
   letter-spacing: 0.06em; 
   text-transform: uppercase;
@@ -71,15 +114,31 @@ body {
 
 /* Section */
 .section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center; 
+
+}
+
+.section-title.secondary {
+  margin-bottom: 50px;
 }
 
 /* Our advantages */
+
+.advantages-image{
+  margin-bottom: 30px;
+}
+
 .advantages .advantages-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+
   color: var(--primary-text-color);
   text-transform: uppercase;
   font-size: 14px;
@@ -89,6 +148,8 @@ body {
 
 
 .advantages .text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--text-color);
   font-weight: 400;
   font-size: 14px;
@@ -96,8 +157,12 @@ body {
 }
 
 /* That we do */
+.section.no-padding-top{
+  padding-top: 0px;
+}
 
-.works{
+.section .works{
+  margin: 0;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -105,11 +170,18 @@ body {
 
 /* Our team */
 .section .name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 .section .profession{
+  margin-top: 0;
+  margin-bottom: 16px;
+
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -162,16 +234,23 @@ button {
 
 }
 .button{
+  display: inline-block;
+  /* border: 1px solid transparent; */
+  border-radius: 4px;
+  padding: 10px 32px;
+  
+  
+
   color: var(--primary-text-color);
   background-color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  text-align: center;
 /* identical to box height, or 162% */
-
-text-align: center;
-letter-spacing: 0.03em;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .button:hover,
 .button:focus{
@@ -179,19 +258,39 @@ letter-spacing: 0.03em;
   background-color: var(--accent-color);
 }
 .button.primary {
+  min-width: 200px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  
 }
 
+.button.secondary {
+  padding: 6px 22px;
+}
 
 
 /* Portfolio */
 
+.portfolio {
+  margin-bottom: 50px;
+}
+
+.portfolio-title{
+  margin: 0;
+}
+
+.portfolio-web{
+  margin-bottom: 20px;
+}
 .project{
+  margin-top: 0;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -199,6 +298,9 @@ letter-spacing: 0.03em;
   
 }
 .category {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -206,6 +308,9 @@ letter-spacing: 0.03em;
 
 }
 .description{
+  margin: 0;
+
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -213,4 +318,13 @@ letter-spacing: 0.03em;
 }
 a{
   text-decoration: none;
+}
+
+.addto {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.portfolio-item{
+  margin-bottom: 30px;
 }
